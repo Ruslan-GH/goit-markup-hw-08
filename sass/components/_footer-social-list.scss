@@ -1,0 +1,21 @@
+.footer-social-list {
+  margin-right: 93px;
+}
+.footer {
+  .social-list__item:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .social-list__link {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: var(--focus-color);
+    }
+  }
+
+  .social-list__icon {
+    fill: #ffffff;
+  }
+}

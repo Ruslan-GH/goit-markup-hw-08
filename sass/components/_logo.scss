@@ -1,0 +1,15 @@
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+
+  animation-duration: 2000ms;
+  animation-iteration-count: 4;
+
+  &__color-web {
+    color: var(--focus-color);
+  }
+}
