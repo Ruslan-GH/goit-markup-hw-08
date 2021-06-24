@@ -22,6 +22,9 @@
                 <a class="logo header__logo" href="./index.html">
                     <span class="logo__color-web">Web</span>Studio
                 </a>
+                <svg class="navigation__menu-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#menu-icon"></use>
+                </svg>
                 <ul class="menu list">
                     <li class="menu__item">
                         <a class="menu__link current link" href="./index.html" target="_blank" rel="noopener noreferrer">Студия</a>
@@ -35,13 +38,13 @@
                 </ul>
             </nav>
             <ul class="menu-contacts">
-                <li>
+                <li class="menu-contacts__link-email">
                     <a class="menu-contacts__email link" href="mailto:info@devstudio.com">
                         <svg class="menu-contacts__email-icon" width="16" height="12">
                             <use href="./images/sprite.svg#envelope"></use>
                         </svg>info@devstudio.com</a>
                 </li>
-                <li>
+                <li class="menu-contacts__link-phone">
                     <a class="menu-contacts__tel link" href="tel:+380961111111">
                         <svg class="menu-contacts__phone-icon" width="10" height="16">
                             <use href="./images/sprite.svg#phone"></use>
@@ -62,7 +65,7 @@
         </section> -->
 
         <!-- FEATURES -->
-        <section class="features">
+        <!-- <section class="features">
             <div class="container">
                 <h2 class="visually-hidden">Особенности</h2>
                 <ul class="features-list">
@@ -108,7 +111,7 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
 
         <!-- WORK -->
         <!-- <section class="work section">
@@ -132,13 +135,32 @@
         </section> -->
 
         <!-- TEAM -->
-        <!-- <section class="team section">
+        <section class="team section">
             <div class="container">
                 <h2 class="section__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
                         <div class="team-list__card">
-                            <img src="./images/about-team-igor-2.jpg" alt="фото игоря демьяенка" width="270" height="260">
+                            <picture>
+                                
+                                <source srcset="../../images/images-team/desktop/img.webp 1x, ../../images/images-team/desktop/img@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="../../images/images-team/desktop/img.jpeg 1x, ../../images/images-team/desktop/img@2x.jpeg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source srcset="../../images/images-team/tablet/img.webp 1x, ../../images/images-team/tablet/img@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="../../images/images-team/tablet/img.jpeg 1x, ../../images/images-team/tablet/img@2x.jpeg 2x"
+                                    media="(min-width: 768px)">
+
+                                <source srcset="../../images/images-team/mobile/img-1.webp 1x, ../../images/images-team/mobile/img@2x-1.webp 2x" 
+                                 media="(min-width: 480px)" type="image/webp">
+                                <source srcset="../../images/images-team/mobile/img-1.jpeg 1x, ../../images/images-team/mobile/img@2x-1.jpeg 2x"
+                                    media="(min-width: 480px)">
+
+                                <img src="./images/about-team-igor-2.jpg" alt="фото игоря демьяенка">
+
+                            </picture>
                             <div class="team-list__content">
                                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                                 <p class="team-list__description" lang="en">Product Designer</p>
@@ -177,7 +199,26 @@
                     </li>
                     <li class="team-list__item">
                         <div class="team-list__card">
-                            <img src="./images/about-team-olha-2.jpg" alt="фото ольги репиной" width="270" height="260">
+                            <picture>
+                            
+                                <source srcset="../../images/images-team/desktop/img-1.webp 1x, ../../images/images-team/desktop/img@2x-1.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="../../images/images-team/desktop/img-1.jpeg 1x, ../../images/images-team/desktop/img@2x-1.jpeg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <source srcset="../../images/images-team/tablet/img-1.webp 1x, ../../images/images-team/tablet/img@2x-1.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="../../images/images-team/tablet/img-1.jpeg 1x, ../../images/images-team/tablet/img@2x-1.jpeg 2x"
+                                    media="(min-width: 768px)">
+                            
+                                <source srcset="../../images/images-team/mobile/img-2.webp 1x, ../../images/images-team/mobile/img@2x-2.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source srcset="../../images/images-team/mobile/img-2.jpeg 1x, ../../images/images-team/mobile/img@2x-2.jpeg 2x"
+                                    media="(min-width: 480px)">
+                            
+                                <img src="./images/about-team-olha-2.jpg" alt="фото ольги репиной">
+                            
+                            </picture>
                             <div class="team-list__content">
                                 <h3 class="team-list__name">Ольга Репина</h3>
                                 <p class="team-list__description" lang="en">Frontend Developer</p>
@@ -216,7 +257,26 @@
                     </li>
                     <li class="team-list__item">
                         <div class="team-list__card">
-                            <img src="./images/about-team-nikolay-2.jpg" alt="фото николая тарасова" width="270" height="260">
+                            <picture>
+                            
+                                <source srcset="../../images/images-team/desktop/img-2.webp 1x, ../../images/images-team/desktop/img@2x-2.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="../../images/images-team/desktop/img-2.jpeg 1x, ../../images/images-team/desktop/img@2x-2.jpeg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <source srcset="../../images/images-team/tablet/img-2.webp 1x, ../../images/images-team/tablet/img@2x-2.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="../../images/images-team/tablet/img-2.jpeg 1x, ../../images/images-team/tablet/img@2x-2.jpeg 2x"
+                                    media="(min-width: 768px)">
+                            
+                                <source srcset="../../images/images-team/mobile/img-3.webp 1x, ../../images/images-team/mobile/img@2x-3.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source srcset="../../images/images-team/mobile/img-3.jpeg 1x, ../../images/images-team/mobile/img@2x-3.jpeg 2x"
+                                    media="(min-width: 480px)">
+                            
+                                <img src="./images/about-team-nikolay-2.jpg" alt="фото николая тарасова">
+                            
+                            </picture>
                             <div class="team-list__content">
                                 <h3 class="team-list__name">Николай Тарасов</h3>
                                 <p class="team-list__description" lang="en">Marketing</p>
@@ -255,7 +315,26 @@
                     </li>
                     <li class="team-list__item">
                         <div class="team-list__card">
-                            <img src="./images/about-team-michail-2.jpg" alt="фото михаила ермакова" width="270" height="260">
+                            <picture>
+                            
+                                <source srcset="../../images/images-team/desktop/img-3.webp 1x, ../../images/images-team/desktop/img@2x-3.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source srcset="../../images/images-team/desktop/img-3.jpeg 1x, ../../images/images-team/desktop/img@2x-3.jpeg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <source srcset="../../images/images-team/tablet/img-3.webp 1x, ../../images/images-team/tablet/img@2x-3.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source srcset="../../images/images-team/tablet/img-3.jpeg 1x, ../../images/images-team/tablet/img@2x-3.jpeg 2x"
+                                    media="(min-width: 768px)">
+                            
+                                <source srcset="../../images/images-team/mobile/img-4.webp 1x, ../../images/images-team/mobile/img@2x-4.webp 2x"
+                                    media="(min-width: 480px)" type="image/webp">
+                                <source srcset="../../images/images-team/mobile/img-4.jpeg 1x, ../../images/images-team/mobile/img@2x-4.jpeg 2x"
+                                    media="(min-width: 480px)">
+                            
+                                <img src="./images/about-team-michail-2.jpg" alt="фото михаила ермакова">
+                            
+                            </picture>
                             <div class="team-list__content">
                                 <h3 class="team-list__name">Михаил Ермаков</h3>
                                 <p class="team-list__description" lang="en">UI Designer</p>
@@ -294,7 +373,7 @@
                     </li>
                 </ul>
             </div>
-        </section>   -->
+        </section>  
     </main>
 
         <!-- CLIENTS -->
