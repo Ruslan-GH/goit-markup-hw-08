@@ -100,6 +100,20 @@ body {
   }
 }
 
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.navigation {
+  outline: 1px border red;
+}
+
 @media screen and (min-width: 300px) {
   .logo {
     font-family: var(--secondary-font);
@@ -114,6 +128,21 @@ body {
   .logo__color-web {
     color: var(--focus-color);
   }
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+  animation-duration: 2000ms;
+  animation-iteration-count: 4;
+}
+
+.logo__color-web {
+  color: var(--focus-color);
 }
 
 .modal-btn {
