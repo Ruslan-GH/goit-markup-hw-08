@@ -18,6 +18,8 @@
   .header__container {
     display: flex;
     align-items: center;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .navigation {
     display: flex;
@@ -34,7 +36,7 @@
   }
 
   .menu-contacts {
-    margin-left: 84px;
+    margin-left: auto;
     &__email-icon {
       width: 14px;
       height: 10px;
@@ -122,6 +124,8 @@
     &__container {
       display: flex;
       align-items: center;
+      padding-top: 0;
+      padding-bottom: 0;
     }
 
     &__logo {

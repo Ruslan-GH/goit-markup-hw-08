@@ -40,9 +40,10 @@
     color: #ffffff;
   }
 }
-
-.work {
-  padding-top: 94px;
+@media screen and (width: 1200px) {
+  .work {
+    padding-top: 94px;
+  }
 }
 
 .work-list {
