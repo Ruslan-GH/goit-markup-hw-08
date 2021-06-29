@@ -70,6 +70,9 @@
     &__item:nth-child(odd) {
       margin-right: 0px;
     }
+    &__description {
+      margin-bottom: 0px;
+    }
   }
 
   .box {

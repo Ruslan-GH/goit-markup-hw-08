@@ -9,7 +9,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../../images/images-hero/mobile/hero.jpg);
+    url(../images/images-hero/mobile/hero.jpg);
   background-size: cover;
   // height: 400px;
 
@@ -46,6 +46,17 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../../images/images-hero/desktop/hero.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    margin-bottom: 30px;
+
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
