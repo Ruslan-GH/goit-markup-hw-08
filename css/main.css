@@ -145,7 +145,6 @@ body {
 }
 
 .mobile-menu__menu-contacts {
-  padding-top: 302px;
   padding-left: 25px;
 }
 
@@ -176,6 +175,7 @@ body {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 9999999;
 }
 
 .navigation {
@@ -194,6 +194,8 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .mobile-menu__close-btn {
@@ -218,7 +220,7 @@ body {
 
 .mobile-menu-social_menu {
   display: flex;
-  padding-left: 40px;
+  padding-left: 25px;
   margin-top: 64px;
 }
 
@@ -582,6 +584,10 @@ body {
   color: #ffffff;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 @media screen and (max-width: 767px) {
   .menu,
   .menu-contacts {
@@ -852,6 +858,10 @@ body {
   height: 70px;
 }
 
+.features-container {
+  margin-bottom: 60px;
+}
+
 .features-list__title-description {
   font-family: var(--main-font);
   font-weight: 700;
@@ -883,6 +893,7 @@ body {
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -30px;
   }
   .features-list__item {
     width: 354px;
@@ -1044,6 +1055,7 @@ body {
   .team-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -30px;
   }
   .team-list__item {
     margin-bottom: 30px;
@@ -1133,6 +1145,7 @@ body {
 .client-list {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: -30px;
 }
 
 .client-list__link {
@@ -1524,6 +1537,37 @@ body {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-button {
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    cursor: pointer;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border-width: 0px;
+    padding: 6px 22px;
+    transition-property: background-color;
+    transition: 250ms var(--timing-function);
+  }
+  .portfolio-button:hover, .portfolio-button:focus {
+    color: white;
+    background-color: var(--focus-color);
+  }
+  .portfolio-filter {
+    display: flex;
+    justify-content: center;
+  }
+  .portfolio-filter-item:not(:last-child) {
+    margin-right: 8px;
+    margin-bottom: 50px;
+  }
+}
+
 .portfolio-image-title {
   font-weight: 700;
   font-size: 18px;
@@ -1638,6 +1682,7 @@ body {
     flex-basis: calc((100% - 90px) / 3);
     margin-left: 30px;
     margin-top: 30px;
+    margin-bottom: 20px;
     cursor: pointer;
     transition-property: box-shadow;
     transition: 250ms var(--timing-function);

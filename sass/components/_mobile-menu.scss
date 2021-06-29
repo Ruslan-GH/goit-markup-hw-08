@@ -39,7 +39,6 @@
   }
 
   &__menu-contacts {
-    padding-top: 302px;
     padding-left: 25px;
   }
   &__tel {
@@ -70,6 +69,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 9999999;
 }
 .navigation {
   outline: 1px border red;
@@ -85,6 +85,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 .mobile-menu__close-btn {
   position: absolute;
@@ -109,7 +111,7 @@
 }
 .mobile-menu-social_menu {
   display: flex;
-  padding-left: 40px;
+  padding-left: 25px;
   margin-top: 64px;
 }
 .mobile-menu-social_item:not(:last-child) {

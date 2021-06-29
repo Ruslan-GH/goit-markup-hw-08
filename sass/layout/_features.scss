@@ -13,6 +13,9 @@
     height: 70px;
   }
 }
+.features-container {
+  margin-bottom: 60px;
+}
 .features-list__title-description {
   font-family: var(--main-font);
   font-weight: 700;
@@ -46,6 +49,7 @@
   .features-list {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: -30px;
   }
   .features-list__item {
     width: 354px;
